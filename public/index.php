@@ -1,5 +1,6 @@
 <?php
 
+require_once "../controller/publicController.php";
 require_once "../config.php";
 
 try {

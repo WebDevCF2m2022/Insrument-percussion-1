@@ -1,1 +1,1 @@
-texte
+Test pour la page d'accueil
