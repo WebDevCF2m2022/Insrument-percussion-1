@@ -1,7 +1,9 @@
 <?php
-
-require_once "../controller/publicController.php";
 require_once "../config.php";
+require_once "../model/ficheModel.php";
+require_once "../controller/publicController.php";
+
+
 
 try {
     $db = new PDO(
@@ -10,12 +12,13 @@ try {
         DB_PWD
     );
     // sur certains serveurs, l'affichage d'erreur est désactivé par défaut pour le driver (extension) PDO, ici on va choisir l'activation si on est en mode dev ou test, mais pas en prod (production voir config.php)
-  /*  if(ENV=="dev"||ENV=="test"){
+    if(ENV=="dev"||ENV=="test"){
         // activation de l'affichage des erreurs
         $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     }
-*/
+
 }catch(Exception $e){
     die($e->getMessage());
 
 };
+//donneInstru($db);
