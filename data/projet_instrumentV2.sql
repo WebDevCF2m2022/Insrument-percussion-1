@@ -21,6 +21,9 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `projet_instrument`
 --
+CREATE SCHEMA IF NOT EXISTS `projet_instrument` DEFAULT CHARACTER SET utf8mb4 ;
+USE `projet_instrument` ;
+
 
 -- --------------------------------------------------------
 
