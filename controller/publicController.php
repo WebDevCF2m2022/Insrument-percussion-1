@@ -21,9 +21,11 @@ if(isset($_GET['page'])){
             break;
 
     default:
+    $instru = donneInstru($db);
         include_once "../view/public_view/homePage.php";
         break;
     }
 }else{
+    $instru = donneInstru($db);
     include_once "../view/public_view/homePage.php";
 }
