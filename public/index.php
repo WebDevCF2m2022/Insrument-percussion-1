@@ -1,7 +1,7 @@
 <?php
 require_once "../config.php";
 require_once "../model/ficheModel.php";
-require_once "../controller/publicController.php";
+
 
 
 
@@ -22,3 +22,4 @@ try {
 
 };
 //donneInstru($db);
+require_once "../controller/publicController.php";

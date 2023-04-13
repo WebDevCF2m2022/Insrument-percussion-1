@@ -60,7 +60,17 @@
             <img src="img/set-realistic-drums-metal-cymbals-260nw-2128767320.png" class="shape">
         </div>
     </section>
-
+<?php
+//var_dump($instru);
+foreach ($instru as $key => $value) {
+    echo $value['nom'];
+    echo $value['resume'];
+    echo $value['url'];
+    echo $value['description'];
+    echo $value['son'];
+    echo $value['img_url'];
+};
+?>
 
     <!-- section vehicule -->
 

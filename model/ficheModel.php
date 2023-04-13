@@ -3,9 +3,9 @@
 
 function donneInstru($db){
 
-$retour = $db->query('SELECT `nom`,`resume`,`url`,`description`,`son`,`copy_son` FROM `instruments` LEFT JOIN image ON instruments.image_id = image.id');
+$retour = $db->query('SELECT i.`nom`,i.`resume`,i.`url`,i.`description`,i.`son`, im.img_url FROM `instruments` i LEFT JOIN image im ON im.instruments_id = i.id');
 
  $data =  $retour->fetchAll(PDO::FETCH_ASSOC);
-var_dump($data);
+//var_dump($data);
 return $data;
 }
