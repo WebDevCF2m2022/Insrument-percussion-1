@@ -11,7 +11,7 @@
             <li><a href="?page=electrophone">Electrophone</a></li>
             <li><a href="?page=idiophone">Idiophone</a></li>
             <li><a href="?page=membranophone">Membranophone</a></li> 
-            <li><a href="?page=contact">Contact</a></li> 
+            <li><a href="#contact">Contact</a></li> 
         </ul>
         <nav class="navbar bg-light">
             <div class="container-fluid">
@@ -22,6 +22,6 @@
             </div>
           </nav>
         
-        <button class="login_btn">LOGIN</button> <!--cée le bouton -->
+        <button class="login_btn">LOGIN</button> <!--crée le bouton -->
         
 </header> 
