@@ -17,6 +17,7 @@ if(isset($_GET['page'])){
             break;
 
         case 'contact':
+          
             include "../view/public_view/contact.php";
             break;
 
