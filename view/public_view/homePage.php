@@ -15,11 +15,12 @@
 </head>
 <body>
     
+    <!--header-->
         <?php include 'include/header.inc.php' ?>
 
     
     
-    <!-- section Acceuil -->
+    <!-- section Accueil -->
     
      
     <section id="home">
@@ -140,48 +141,32 @@ foreach ($instru as $key => $value) {
         <div class="main"></div>
     </section>
 
-    
-
-    <!-- section services -->
-    <!-- CAPTCHA
-    <div class="cap">
-        <p id="captcha"></p><br>
-        <input id="captchaInput" type="text" placeholder="Remplir"><span></span></br></br>
-        <button id="captchaValidate">Envoyer</button>
-        <button id="captchaRefresh">Autres</button>
-    </div>
-   -->
-
-
-    
-
     <!-- section contact -->
-
+    
     <section id="contact">
         <h1 class="section_title">Contact</h1>
-        <div class="localisation_contact_div">
-            <div class="localisation">
-                <h3>Notre Adresse</h3>
-                <iframe src="images/Capture d’écran 2023-04-04 125651.png" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-
-            <div class="form_contact">
-                <h3>Envoyer un message</h3>
-                <form action="#">
-                    <input type="text"placeholder="Nom">
-                    <input type="email"placeholder="Adresse Mail">
-                    <input type="text"placeholder="Objet">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                    <input type="submit" value="Envoyer">
-                </form>
-            </div>
+        <div class="form_contact">
+            <h3>Envoyer un message</h3>
+            <form action="#">
+                <input type="text"placeholder="Nom">
+                <input type="email"placeholder="Adresse Mail">
+                <input type="text"placeholder="Objet">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+            <!-- CAPTCHA-->
+            <div class="cap">
+                <p id="captcha"></p>
+                <input id="captchaInput" type="text" placeholder="Remplir"><br>
+                <button id="captchaValidate">Envoyer</button>
+                <button id="captchaRefresh">Autres</button>
+            </div> 
         </div>
     </section>
  
-
-    <footer>
-        <p> Copyright 2022 </p>
-    </footer>
+    <!--footer-->
+    <?php include 'include/footer.inc.php' ?>
+   
 
     <script>
         //menu responsive code JS
