@@ -5,6 +5,7 @@ if(isset($_GET['page'])){
     switch($_GET['page']){
         
         case 'electrophone': 
+            $elec = donneCatInstru($db);
             include "../view/public_view/electrophone.php";
             break;
         
