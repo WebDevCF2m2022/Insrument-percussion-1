@@ -34,113 +34,44 @@
             <img src="img/set-realistic-drums-metal-cymbals-260nw-2128767320.png" class="shape">
         </div>
     </section>
-<?php
-//var_dump($instru);
-foreach ($instru as $key => $value) {
-    echo $value['nom'];
-    echo $value['resume'];
-    echo $value['url'];
-    echo $value['description'];
-    echo $value['son'];
-    echo $value['img_url'];
-};
-?>
 
-    <!-- section vehicule -->
 
     <section id="cars">
         <h1 class="section_title">Nos Instruments</h1>
         <div class="images">
             <ul>
+<?php
+//var_dump($instru);
+foreach ($instru as $key => $value): 
+    /*0echo $value['nom'];
+    echo $value['resume'];
+    echo $value['url'];
+    echo $value['description'];
+    echo $value['son'];
+    echo $value['img_url'];
+    */
+    //affichez des images liées à chaque instrument avec le nom de l'instrument
+?>
+
+    <!-- section vehicule -->
+
+    
                 <li class="car">
                    <div>
-                        <a href="images/Capture d’écran 2023-04-04 125651.png" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="images/toms.jpg" alt="">
+                        <a href="<?=$value['img_url']?>" data-toggle="lightbox" data-gallery="example-gallery">
+                            
+                            <img src="<?=$value['img_url']?>" alt="">
                         </a>                       
                    </div>
-                   <div class="btn_main"><button class="bout">TOMS</button>
+                   <div class="btn_main"><button class="bout"><?=$value['nom'];?></button>
                   </div>
                 </li>
-
-                <li class="car">
-                    <div>
-                        <a href="images/lito.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="images/lito.jpg" alt="">
-                        </a>   
-                    </div>
-                    <div class="btn_main"><button class="bout">LITHOPHONE</button>
-                    </div>
-    
-                 </li>
-                 <li class="car">
-                    <div>
-                        <a href="images/piano.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="images/piano.jpg" alt="">
-                        </a> 
-                    </div>
-                    <div class="btn_main"><button class="bout">PIANO</button>
-                    </div>
-                 </li>
-                 <li class="car">
-                    <div>
-                        <a href="images/car5.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="images/piano.jpg" alt="">
-                        </a> 
-                    </div>
-                    <div class="btn_main"><button class="bout">dgfsgfd</button>
-                    </div>
-                 </li>
-                 <li class="car">
-                    <div>
-                        <a href="images/car1.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                            <img src="images/lito.jpg" alt="">
-                        </a>   
-                    </div>
-                    <div class="btn_main"><button class="bout">dgfsgfd</button>
-                    </div>
-    
-                 </li>
-                 <li class="car">
-                    <div>
-                         <a href="images/toms.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                             <img src="images/toms.jpg" alt="">
-                         </a>                       
-                    </div>
-                    <div class="btn_main"><button class="bout">dgfsgfd</button>
-                   </div>
-                 </li>
-                 <li class="car">
-                    <div>
-                         <a href="images/toms.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                             <img src="images/toms.jpg" alt="">
-                         </a>                       
-                    </div>
-                    <div class="btn_main"><button class="bout">dgfsgfd</button>
-                   </div>
-                 </li>
-                 <li class="car">
-                    <div>
-                         <a href="images/toms.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                             <img src="images/toms.jpg" alt="">
-                         </a>                       
-                    </div>
-                    <div class="btn_main"><button class="bout">dgfsgfd</button>
-                   </div>
-                 </li>
-                 <li class="car">
-                    <div>
-                         <a href="images/toms.jpg" data-toggle="lightbox" data-gallery="example-gallery">
-                             <img src="images/toms.jpg" alt="">
-                         </a>                       
-                    </div>
-                    <div class="btn_main"><button class="bout">dgfsgfd</button>
-                   </div>
-                 </li>
+      
+<?php endforeach; ?>
             </ul>
         </div>
         <div class="main"></div>
     </section>
-
     <!-- section contact -->
     
     <section id="contact">
@@ -162,6 +93,14 @@ foreach ($instru as $key => $value) {
                 <button id="captchaRefresh">Autres</button>
             </div> 
         </div>
+        <?php
+foreach ($user as $key => $value) {
+    echo $value['idusers'];
+    echo $value['identite'];
+    echo $value['lemail'];
+   
+};
+?>
     </section>
  
     <!--footer-->
